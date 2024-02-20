@@ -111,6 +111,46 @@
     .social-links a:hover {
       color: #007bff;
     }
+
+    .jumbotron {
+      background-color: #007bff;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 36px;
+      font-weight: bold;
+      animation: slideInFromLeft 1s ease-out forwards;
+    }
+
+    .hero-cta {
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    /* CSS Animation */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
