@@ -1,4 +1,5 @@
-<html lang="en" class="sr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -10,11 +11,107 @@
   <meta name="keywords" content="JPEMPIRE" />
   <meta name="description" content="Full Stack Developer" />
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="" />
-  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Custom CSS -->
+  <style>
+    /* Reset some default styles */
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header styles */
+    .jumbotron {
+      background-color: #007bff;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* About section styles */
+    #about {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .about-wrapper__image img {
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+
+    /* Projects section styles */
+    #projects {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .project-wrapper__text {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-wrapper__text-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Contact section styles */
+    #contact {
+      background-color: #007bff;
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .cta-btn {
+      background-color: #fff;
+      color: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .cta-btn:hover {
+      background-color: #f8f9fa;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+  </style>
 </head>
 
 <body>
@@ -35,7 +132,6 @@
   </section>
   <!-- /END Hero Section -->
 
-  <!-- **** About Section **** -->
   <section id="about">
     <div class="container">
       <h2 class="section-title load-hidden">About me</h2>
@@ -65,7 +161,7 @@
       </div>
     </div>
   </section>
-
+  <!-- **** Projects Section **** -->
   <section id="projects">
     <div class="container">
       <div class="project-wrapper">
@@ -187,6 +283,7 @@
     </div>
   </section>
 
+  <!-- **** Footer **** -->
   <footer class="footer navbar-static-bottom">
     <div class="container">
       <a rel="noreferrer" href="#top" class="back-to-top">
@@ -222,6 +319,9 @@
     </div>
   </footer>
 
+  <!-- JavaScript -->
+  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script defer type="module" src="index.js"></script>
 </body>
 
