@@ -1,43 +1,40 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f0f0f0;
+    padding: 0;
   }
   
-  .login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #007bff;
+  header {
+    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
+    padding: 20px 0;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .intro, .projects, .contact {
+    margin-bottom: 40px;
+  }
+  
+  .project-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
   }
   

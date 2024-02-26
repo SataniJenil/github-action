@@ -4,19 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="login-form">
-      <input type="text" placeholder="Username" id="username" required>
-      <input type="password" placeholder="Password" id="password" required>
-      <button type="submit">Login</button>
-    </form>
-  </div>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Welcome to my portfolio!</h2>
+      <p>I'm passionate about creating innovative solutions...</p>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of project 1...</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of project 2...</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Description of project 3...</p>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 
