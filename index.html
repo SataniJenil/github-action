@@ -4,48 +4,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>HTML & CSS Examples</title>
+  <style>
+    /* Example 1: Animated Navigation Menu */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    a:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    /* Example 2: CSS Loading Spinner */
+    .loader-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 8px solid #3498db;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Example 3: Card Flip Animation */
+    .card {
+      width: 200px;
+      height: 300px;
+      perspective: 1000px;
+      margin-top: 50px;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .card-front {
+      background-color: #3498db;
+      color: white;
+    }
+
+    .card-back {
+      background-color: #e74c3c;
+      color: white;
+      transform: rotateY(180deg);
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-  </header>
-  <main>
-    <section class="intro">
-      <h2>Welcome to my portfolio!</h2>
-      <p>I'm passionate about creating innovative solutions...</p>
-    </section>
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Description of project 1...</p>
+  <!-- Example 1: Animated Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Example 2: CSS Loading Spinner -->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Example 3: Card Flip Animation -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Front</h2>
       </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Description of project 2...</p>
+      <div class="card-back">
+        <h2>Back</h2>
       </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>Description of project 3...</p>
-      </div>
-    </section>
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 My Portfolio</p>
-  </footer>
-  <script src="script.js"></script>
+    </div>
+  </div>
 </body>
 
 </html>
