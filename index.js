@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const razorpay = new Razorpay({ // Creating a new instance of Razorpay
-    key_id: 'rzp_test_olsOeC1vMKcAiB', // Your Razorpay key ID
-    key_secret: 's1lXgs917ixxnNCDlY1omgMK' // Your Razorpay key secret
+    key_id: '', // Your Razorpay key ID
+    key_secret: '' // Your Razorpay key secret
 });
 
 app.use(bodyParser.json());
