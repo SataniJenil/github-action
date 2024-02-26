@@ -6,15 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML & CSS Examples</title>
   <style>
-    /* Example 1: Animated Navigation Menu */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f9f9f9;
     }
 
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    /* Example 1: Animated Navigation Menu */
     nav {
       background-color: #333;
+      padding: 10px 0;
+      margin-bottom: 30px;
     }
 
     ul {
@@ -33,6 +47,8 @@
       color: white;
       text-decoration: none;
       position: relative;
+      padding-bottom: 5px;
+      transition: all 0.3s ease;
     }
 
     a::before {
@@ -42,33 +58,24 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #fff;
-      visibility: hidden;
+      background-color: #3498db;
       transform: scaleX(0);
-      transition: all 0.3s ease-in-out 0s;
+      transition: transform 0.3s ease;
     }
 
     a:hover::before {
-      visibility: visible;
       transform: scaleX(1);
     }
 
     /* Example 2: CSS Loading Spinner */
-    .loader-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
     .loader {
-      border: 8px solid #f3f3f3;
+      border: 8px solid #3498db;
+      border-top: 8px solid transparent;
       border-radius: 50%;
-      border-top: 8px solid #3498db;
       width: 50px;
       height: 50px;
       animation: spin 2s linear infinite;
+      margin-bottom: 30px;
     }
 
     @keyframes spin {
@@ -86,7 +93,7 @@
       width: 200px;
       height: 300px;
       perspective: 1000px;
-      margin-top: 50px;
+      margin-bottom: 30px;
     }
 
     .card-inner {
@@ -105,7 +112,12 @@
       width: 100%;
       height: 100%;
       position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .card-front {
@@ -122,6 +134,8 @@
 </head>
 
 <body>
+  <h1>HTML & CSS Examples</h1>
+
   <!-- Example 1: Animated Navigation Menu -->
   <nav>
     <ul>
@@ -133,9 +147,7 @@
   </nav>
 
   <!-- Example 2: CSS Loading Spinner -->
-  <div class="loader-container">
-    <div class="loader"></div>
-  </div>
+  <div class="loader"></div>
 
   <!-- Example 3: Card Flip Animation -->
   <div class="card">
